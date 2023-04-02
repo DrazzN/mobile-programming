@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Area of :"/>
+    <RadioGroup
+        android:id="@+id/areaT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/circle"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="Circle" />
+
+        <RadioButton
+            android:id="@+id/rectangle"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="Rectangle" />
+
+        <RadioButton
+            android:id="@+id/triangle"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="Triangle" />
+
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Unit :"/>
+    <RadioGroup
+        android:id="@+id/unit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/cm"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="cm" />
+
+        <RadioButton
+            android:id="@+id/m"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="m" />
+
+        <RadioButton
+            android:id="@+id/km"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="km" />
+        <RadioButton
+            android:id="@+id/ft"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="ft" />
+        <RadioButton
+            android:id="@+id/in"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="in" />
+
+    </RadioGroup>
+    <EditText
+        android:id="@+id/Length"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Length"
+        android:visibility="gone"/>
+    <EditText
+        android:id="@+id/Width"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Width"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/Radius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Radius"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/Height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Height"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/Calc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"/>
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result"/>
+
+</LinearLayout>

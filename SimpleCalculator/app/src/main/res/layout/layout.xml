@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="match_parent"
+        android:layout_height="61sp"
+        android:inputType="numberDecimal"
+        android:hint="Enter first number."/>
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="match_parent"
+        android:layout_height="61sp"
+        android:inputType="numberDecimal"
+        android:hint="Enter second number."/>
+
+
+    <RadioGroup
+        android:id="@+id/operators"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/add"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="+" />
+
+        <RadioButton
+            android:id="@+id/subtract"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="-" />
+
+        <RadioButton
+            android:id="@+id/multiply"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="*" />
+
+        <RadioButton
+            android:id="@+id/divide"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="/" />
+    </RadioGroup>
+<Button
+    android:id="@+id/calc"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Calculate"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="61sp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="Result Here ...." />
+
+
+</LinearLayout>
