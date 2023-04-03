@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="90sp"
+        android:layout_height="80sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20sp"
+        app:srcCompat="@drawable/form_logo" />
+
+    <TextView
+        android:id="@+id/formFill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="45sp"
+        android:layout_toRightOf="@id/logo"
+        android:text="My Form Application:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="30sp"
+        android:text="Name     :"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/nameField"
+        android:layout_toRightOf="@id/nameLabel"
+        android:hint="(eg.John Smith)"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginStart="5sp"/>
+
+    <TextView
+        android:id="@+id/emailLabel"
+        android:text="Email      :"
+        android:textSize="20sp"
+        android:layout_below="@id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:layout_marginStart="20sp"/>
+
+    <EditText
+        android:id="@+id/emailField"
+        android:layout_toRightOf="@id/emailLabel"
+        android:hint="(eg.example@fun.com)"
+        android:textSize="20sp"
+        android:layout_below="@id/nameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginStart="5sp"/>
+    <TextView
+        android:id="@+id/addressLabel"
+        android:text="Address :"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contactLabel"
+        android:layout_marginTop="40sp"
+        android:layout_marginStart="20sp"/>
+
+    <EditText
+        android:id="@+id/addressField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contactField"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20sp"
+        android:layout_toRightOf="@id/addressLabel"
+        android:hint="(eg.jorpati-05)"
+        android:textSize="20sp"
+        android:layout_marginStart="5sp"/>
+    <TextView
+        android:id="@+id/contactLabel"
+        android:text="Contact  :"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailLabel"
+        android:layout_marginTop="40sp"
+        android:layout_marginStart="20sp"/>
+
+    <EditText
+        android:id="@+id/contactField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailField"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20sp"
+        android:layout_toRightOf="@id/contactLabel"
+        android:hint="Eg.9863476658"
+        android:textSize="20sp"
+        android:layout_marginStart="5sp"/>
+    <TextView
+        android:id="@+id/genderLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addressLabel"
+        android:layout_marginTop="40sp"
+        android:layout_marginStart="20sp"
+        android:text="Gender   :"
+        android:textSize="20sp"/>
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addressField"
+        android:layout_toRightOf="@id/genderLabel"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="5sp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/maleField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0sp"
+            android:text="Male"
+            android:textSize="20sp"/>
+        <RadioButton
+            android:id="@+id/femaleField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:text="Female"
+            android:textSize="20sp"/>
+    </RadioGroup>
+    <TextView
+        android:id="@+id/ageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/genderLabel"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="40sp"
+        android:text="Age         :"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/ageField"
+        android:layout_toRightOf="@id/ageLabel"
+        android:hint="Age..."
+        android:textSize="20sp"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup"
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginStart="5sp"/>
+    <Button
+        android:id="@+id/submitButton"
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/resultLabel"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20sp"/>
+
+    <TextView
+        android:id="@+id/resultLabel"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Result"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:layout_marginStart="20sp"
+        android:layout_marginBottom="20sp"/>
+
+</RelativeLayout>
